@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0000FF">
+    android:background="@color/material_deep_teal_500">
 
     <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -10,7 +10,6 @@
             android:layout_height="match_parent" android:orientation="vertical">
 
             <LinearLayout
-                android:background="#0000FF"
                 android:layout_height="0dp"
                 android:layout_width="match_parent"
                 android:layout_weight="2" >
@@ -25,11 +24,30 @@
                 android:layout_height="0dp" android:orientation="vertical"
                 android:layout_weight="1">
 
+                <TextView android:id="@+id/email_error" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:visibility="invisible"
+                    android:textColorHint="@color/common_signin_btn_default_background"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
                 <AutoCompleteTextView android:id="@+id/email" android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress" android:maxLines="1"
                     android:singleLine="true"
                     android:layout_margin="10dp"/>
+
+
+                <TextView android:id="@+id/password_error" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:visibility="invisible"
+                    android:hint="Please enter password"
+                    android:textColorHint="@color/common_signin_btn_default_background"
+                    android:layout_marginLeft="10dp" />
 
                 <EditText android:id="@+id/password" android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:hint="@string/prompt_password"

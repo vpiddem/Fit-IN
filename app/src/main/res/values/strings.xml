@@ -32,5 +32,12 @@
     <string name="error_field_required">This field is required</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="is_logged_in">IS_LOGGED_IN</string>
+
+    <string name="enter_email">Please enter email</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="email">admin@gmail.com</string>
+    <string name="pwd">admin</string>
+    <string name="email_pwd_incorrect">Email &amp; password combination is incorrect</string>
 </resources>
 
